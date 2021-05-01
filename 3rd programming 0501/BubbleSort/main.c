@@ -3,7 +3,7 @@
 #define LIS_LEN 10
 
 int main() {
-    int lis[LIS_LEN] = {11, 3, 55, 24, 13, 44, 2, 1, 12, 3};
+    int lis[LIS_LEN] = {11, 3, 3, 24, 13, 44, 2, 1, 12, 3};
     int i, j, temp;
 
     for (i = 0; i < LIS_LEN; i++) {
