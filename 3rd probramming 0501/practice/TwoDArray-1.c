@@ -11,11 +11,14 @@ int main() {
     };
 
     int i, j;
+    
     for (i = 0; i < Col; i++) {
         printf("%d번째 행 : ", i);
+
         for (j = 0; j < Row; j++) {
             printf("%3d ", S[i][j]);
         }
+
         printf("\n");
     }
 
