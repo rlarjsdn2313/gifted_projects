@@ -13,7 +13,7 @@ int main(void) {
     }
 
     printf("%d 사람의 키를 입력하세요.\n");
-    
+
     int a = 0;
     for (int i=0;i<people;i++) {
         if (height[i] >= a) {
@@ -22,4 +22,6 @@ int main(void) {
     }
 
     printf("최댓값은 %d 입니다.\n", a);
+
+    return 0;
 }
