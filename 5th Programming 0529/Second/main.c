@@ -2,17 +2,19 @@
 
 int main(void) {
     FILE* stream;
-    int file_state;
+    char name[20];
+    int kor, eng, total;
 
-    stream = fopen("data1.txt", "w");
-    if (stream == NULL) {
-        printf("[!]Error in opening file...\n");
-    }
+    printf("1. 이름입력 : ");
+    fscanf(stdin, "%s", name);
 
-    file_state = fclose(stream);
-    if (file_state == EOF) {
-        puts("[!]Error in closing file...");
-    }
+    printf("2. 국어점수, 영어점수 입력 : ");
+    fscanf(stdin, "%d %d", &kor, &eng);
+    total = kor + eng;
 
-    return 0;
+    stream = fopen("data4.txt", "w");
+    fprintf(stream, "%s %d %d %d \n", name, kor, eng, total);
+    fclose(stream);
+    
+    return 1;
 }
